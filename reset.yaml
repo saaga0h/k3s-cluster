@@ -4,7 +4,7 @@
   become: true
   gather_facts: true
   serial:
-    - 3
+    - 1
     - 5
   post_tasks:
     - name: Remove archived journal files

@@ -1,16 +1,14 @@
 server:
   hosts:
-    apollo:
-    boreas:
-    cerus:
+    orum:
+    tayar:
+    hugh:
 
 agent:
   hosts:
-    chaos:
-    crios:
-    helios:
-    hermes:
-    hypnos:
+    bosus:
+    crosis:
+    torsus:
 
 cluster:
   children:

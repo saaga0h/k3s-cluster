@@ -29,11 +29,11 @@ k3s_vars:
     version: v1.29.4+k3s1
   server:
     api:
-      host: 192.168.4.10
+      host: 192.168.40.10
       port: 6443
     cluster:
       dns: 10.43.0.10
-      domain: cluster.local
+      domain: federation
     controlplane:
       tainted: true
     loadbalancer:

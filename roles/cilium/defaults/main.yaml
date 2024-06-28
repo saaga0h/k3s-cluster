@@ -38,15 +38,7 @@ cilium_vars:
           subdomain: hubble
         infrastructure:
           annotations:
-            io.cilium/lb-ipam-ips: 192.168.4.19
-        replicas: 1
-        resources:
-          limits:
-            cpu: 400m
-            memory: 256Mi
-          requests:
-            cpu: 100m
-            memory: 64Mi
+            io.cilium/lb-ipam-ips: 192.168.40.19
       tls:
         auto:
           method: certmanager
@@ -61,14 +53,14 @@ cilium_vars:
       controller:
         service:
           loadbalancer:
-            ip: 192.168.4.17
+            ip: 192.168.40.17
     ipam:
       operator:
         cluster_pool: 10.42.0.0/16
     loadbalancer:
       algorithm: disabled
       ip_pool:
-        cidr: 192.168.4.16/28
+        cidr: 192.168.40.16/28
         name: default-pool
       l2_announcement_policy:
         name: default-l2-announcement-policy
